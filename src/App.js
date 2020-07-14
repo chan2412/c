@@ -30,7 +30,7 @@ class App extends Component {
 
 name.push(x);
 pass.push(y);
-    alert(name[3]);
+    alert("successfully signed up");
     this.setState({n:'',p:''});
   }
 else{
