@@ -13,12 +13,7 @@ class Home extends Component {
         <div class="h">
         <div class="bo">
     <Button variant="contained" color="primary" onClick={this.onLo} >Logout</Button><br/><br/><br/>
-    <p>Name :{s.obj.name[c]}<br/>
-    Year:{s.obj.Year[c]} <br/>
-    Department:{s.obj.Dept[c]}<br/>
-    Roll no:{s.obj.Rno[c]}
-    </p>
-          Hello {s.obj.name[c]}
+   Hello
         </div>
         </div>
         );
