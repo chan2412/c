@@ -5,7 +5,7 @@ import {c} from "./Login";
 import './App.css';
 class Home extends Component {
    onLo=()=>{
-        this.props.history.push('/');
+        this.props.history.push('/c');
       }
     render() {
 
@@ -13,7 +13,12 @@ class Home extends Component {
         <div class="h">
         <div class="bo">
     <Button variant="contained" color="primary" onClick={this.onLo} >Logout</Button><br/><br/><br/>
-   Hello
+    <p>Name :{s.obj.name[c]}<br/>
+    Year:{s.obj.Year[c]} <br/>
+    Department:{s.obj.Dept[c]}<br/>
+    Roll no:{s.obj.Rno[c]}<br/>
+    </p>
+          Hello {s.obj.name[c]}
         </div>
         </div>
         );

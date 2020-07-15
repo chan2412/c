@@ -1,5 +1,5 @@
 
-body{
+.h,body{
    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
@@ -32,9 +32,6 @@ text-align:center; }
 }
 @media screen and (max-width: 800px){
 .bo{
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-   animation: gradient 10s ease infinite;
-  color:white;
   border:3px solid #f1f1f1;
 position: absolute;
 top:50%;left:50%;transform:translate(-50%,-50%);
