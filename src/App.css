@@ -3,7 +3,6 @@
    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    background-color: black;
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position: top;
@@ -17,29 +16,17 @@
 
 .bo{
   background-color: rgba(0,0,0,0);
-  color:white;
-  border:3px solid #f1f1f1;
 position: absolute;
-top:50%;left:50%;transform:translate(-50%,-50%);
+top:55%; left:50%;right:50%; bottom:50%;
+transform:translate(-50%,-50%);
 z-index: 2;
-width:20%;
-height:80%;
-padding: 40px;
+width:100%;
+height:100%;
+padding: 60px;
 text-align:center; }
 .ff{
   border:3px solid #f1f1f1;
   color:green;
-}
-@media screen and (max-width: 800px){
-.bo{
-  border:3px solid #f1f1f1;
-position: absolute;
-top:50%;left:50%;transform:translate(-50%,-50%);
-z-index: 2;
-width:60%;
-height:80%;
-padding: 40px;
-text-align:center; } 
 }
 @keyframes gradient {
     0% {

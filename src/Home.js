@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import {s} from "./Signup";
 import {c} from "./Login";
@@ -10,7 +11,7 @@ class Home extends Component {
     render() {
 
         return (
-        <div class="h">
+        <div class="h"><AppBar  style={{alignItems:"center",fontSize:"20px"}} color="primary">STUDENT FORM</AppBar>
         <div class="bo">
     <Button variant="contained" color="primary" onClick={this.onLo} >Logout</Button><br/><br/><br/>
     <p>Name :{s.obj.name[c]}<br/>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import AppBar from "@material-ui/core/AppBar";
 import {s} from "./Signup";
 import './App.css';
 export var c=0;
@@ -47,7 +48,8 @@ onSi=()=>{
   }
   render() {
   return (
-    <div class="h"><div class="bo"><h1>{this.state.type}</h1>
+    <div class="h">
+    <AppBar  style={{alignItems:"center",fontSize:"20px"}} color="primary">STUDENT FORM</AppBar><div class="bo"><h1>{this.state.type}</h1>
     <Button variant="contained" color="primary" onClick={this.onSi}>Signup</Button> &emsp;&emsp;&emsp;
     <Button variant="contained" color="primary" >Login</Button><br/><br/><br/>
   <TextField id='ff' style={{color:"white"}} label="Username" variant="outlined" type="text" borderColor="coral" value={this.state.n}

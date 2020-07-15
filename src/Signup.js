@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 import TextField from "@material-ui/core/TextField";
+import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
+import AppBar from "@material-ui/core/AppBar";
 import './App.css';
 export var s={
   "arr":["bc","a","3"],
   "pass":["z","y","c"],
-  "obj":{"name":["a","b","c"],"Year":[1,2,3],"Dept":["CSE","EEE","ECE"],"Rno":[1,2,3]}
+  "obj":{"name":["a","b","c"],"Year":["first","Second","Third"],"Dept":["CSE","EEE","ECE"],"Rno":["1","2","3"]}
 }
 class Signup extends Component {
   constructor(props) {
     super(props);
- 
     this.state = {
       n: '',
       p:'',
@@ -66,9 +69,11 @@ s.obj.Rno.push(n);
  }
   render() {
   return (
-    <div class="h"><div class="bo">
+    <div class="h">
+    <AppBar  style={{alignItems:"center",fontSize:"20px"}} color="primary"><h8>STUDENT FORM</h8></AppBar>
+    <div class="bo">
      <h1>{this.state.type}</h1>
-    <Button variant="contained" color="primary" >Signup</Button> &emsp;&emsp;&emsp;
+    <Button variant="contained" color="primary" >Signup</Button> &emsp;&emsp;
     <Button variant="contained" color="primary" onClick={this.onLo} >Login</Button><br/><br/><br/>
   <TextField id='ff' style={{color:"white"}} label="Username" variant="outlined" type="text" borderColor="coral" value={this.state.n}
           onChange={this.na} /><br/><br/>
@@ -76,10 +81,22 @@ s.obj.Rno.push(n);
           onChange={this.pa} /><br/><br/>
           <TextField id='ff' style={{color:"white"}} label="Name" variant="outlined" type="text" borderColor="coral" value={this.state.a}
           onChange={this.aa} /><br/><br/>
-          <TextField id='ff' style={{color:"white"}} label="Year" variant="outlined" type="number" borderColor="coral" value={this.state.b}
-          onChange={this.ba} /><br/><br/>   
-            <TextField id='ff' style={{color:"white"}} label="Department" variant="outlined" type="text" borderColor="coral" value={this.state.c}
-          onChange={this.ca} /><br/><br/>
+          <InputLabel >Year</InputLabel>  
+          <Select id='ff' style={{color:"white",width:"230px"}} label="Year" variant="outlined" type="number" borderColor="coral" value={this.state.b}
+          onChange={this.ba} >
+           <MenuItem value="First">First</MenuItem>
+          <MenuItem value="Second">Second</MenuItem>
+          <MenuItem value="Third">Third</MenuItem>
+          <MenuItem value="Final">Final</MenuItem></Select>
+          <br/><br/> 
+          <InputLabel >Department</InputLabel>  
+            <Select id='ff' style={{color:"white",width:"230px"}} label="Department" variant="outlined" type="text" borderColor="coral" value={this.state.c}
+          onChange={this.ca} >
+          <MenuItem value="CSE">CSE</MenuItem>
+          <MenuItem value="ECE">ECE</MenuItem>
+          <MenuItem value="EEE">EEE</MenuItem>
+          <MenuItem value="MECHANICAL">MECH</MenuItem></Select>
+          <br/><br/>
           <TextField id='ff' style={{color:"white"}} label="Roll no" variant="outlined" min="5999999999" max="9999999999" type="number"  borderColor="coral" value={this.state.d}
           onChange={this.da} /><br/><br/>  
         <Button variant="contained" color="primary" onClick={this.onAddItem} disabled={!this.state.b}>{this.state.type}</Button>
