@@ -7,15 +7,12 @@ class App extends Component {
     render() {
         return (
              <Router>
-        <div><Link to="/" > Login</Link>
-        <Link to="/Signup">Signup</Link>
           <Switch>
-            <Route exact path="/" component={Login} ></Route>
+            <Route exact path="/c" component={Login} ></Route>
             <Route exact path="/Login" component={Login} ></Route>
             <Route exact path="/Home" component={Home} ></Route>
             <Route exact path="/Signup" component={Signup} ></Route>
           </Switch>
-          Hello world
         </div>
       </Router>
         );
