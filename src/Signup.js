@@ -62,7 +62,7 @@ s.obj.Rno.push(n);
     this.setState({n:'',p:'',a:'',b:'',c:'',d:''});
   };
  onLo=()=>{
-  this.props.history.push('/');
+  this.props.history.push('/c');
  }
   render() {
   return (
