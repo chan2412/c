@@ -30,8 +30,9 @@ text-align:center; }
   color:green;
 }
 @media only screen and (max-width: 800px){
- .bo{
-  background-color: rgba(0,0,0,0);
+.bo{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+   animation: gradient 10s ease infinite;
   color:white;
   border:3px solid #f1f1f1;
 position: absolute;
